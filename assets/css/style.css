@@ -1,0 +1,73 @@
+.main {
+  display: flex;
+  border: 1px solid;
+  flex-direction: column;
+  width: 35%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  overflow: auto;
+}
+.meal-type,
+.people-num,
+.restaurant-name,
+#select-dish {
+  margin: 25px 10px;
+}
+.serve-num{
+  margin: 3px 0px 0 15px;
+}
+h2 {
+  text-align: center;
+}
+#number-of-people,
+#no-of-serve {
+  width: 70px;
+}
+.next {
+  float: right;
+  margin: 30px 15px 5px 15px;
+  height: 30px;
+  cursor: pointer;
+}
+a{
+  text-decoration: none!important;;
+  color: black;
+  padding: 5px 0px;
+  margin: 30px 10px 20px 10px;
+  display:inline-block;
+  text-align: center;
+}
+select{
+  height: 27px;
+}
+.next,
+.prev-btn {
+  width: 60px;
+  border: 1px solid;
+  background-color: rgb(207, 206, 206);
+}
+.meal-type, .people-no, .restaurant-name, .dishes{
+  display: flex;
+  margin: 5px 10px;
+}
+p{
+  margin: 22px 10px;
+}
+#addDish{
+  border: 1px solid;
+  margin: 10px;
+  padding: 5px;
+  background-color: rgb(120, 163, 165);
+  cursor: pointer;
+  display: block;
+  width: 100px;
+}
+.dish{
+  display: flex;
+  margin: 10px 5px;
+}
+.text{
+  margin: 5px 5px 0 0;
+}

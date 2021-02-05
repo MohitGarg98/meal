@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <form action="/step2" method="post">
+            <h2>Step 1</h2>
+            <div class="meal-type">
+                <span class="text">Please Select a Meal: </span>
+                <select name="meal" id="meal">
+                    <option value="lunch">Lunch</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+            </div>
+            <div class="people-num">
+                <span class="text">Please Enter Number of People</span>
+                <input type="number" name="no_of_people" id="number-of-people" required>
+            </div>
+            <button type="submit" class="next">Next</button>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <form action="/step3" method="post">
+            <h2>Step 2</h2>
+            <div class="restaurant-name">
+                <span class="text">Please Select a Restaurant: </span>
+                <select name="restaurant" id="restaurant">
+                    <%for(let i=0; i < restaurantArr.length; i++) { %>
+                        <option value="<%=restaurantArr[i] %>">
+                            <%= restaurantArr[i] %>
+                        </option>
+                        <% } %>
+                </select>
+            </div>
+            <a href="/" class="prev-btn">Prev</a>
+            <button type="submit" class="next">Next</button>
+        </form>
+    </main>
+</body>
+
+</html>

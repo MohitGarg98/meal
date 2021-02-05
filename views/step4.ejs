@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <form action="/" method="post">
+            <h2>Review</h2>
+            <div class="meal-type">
+                <h4>Meal:</h4>
+                <p>
+                    <%= review.meal.charAt(0).toUpperCase() + review.meal.slice(1) %>
+                </p>
+            </div>
+            <div class="people-no">
+                <h4>No. of People:</h4>
+                <p>
+                    <%= review.no_of_people %>
+                </p>
+            </div>
+            <div class="restaurant-name">
+                <h4>Restaurant:</h4>
+                <p>
+                    <%= review.restaurant %>
+                </p>
+            </div>
+            <div class="dishes">
+                <h4>Dishes:</h4>
+                <div class="dish-container">
+                    <% for(var i=0; i < review.dishArr.length; i++){ %>
+                        <p>
+                            <%= review.dishArr[i] %>
+                        </p>
+                        <% } %>
+                </div>
+            </div>
+            <a class="prev-btn" href="/step3">Prev</a>
+            <button type="submit" class="next">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

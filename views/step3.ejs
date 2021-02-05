@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="main" style="width: auto">
+        <form action="/step4" method="post">
+            <h2>Step 3</h2>
+            <div id="select-dish">
+                <div class="dish">
+                    <span class="text">Please Select a Dish: </span>
+                    <select name="dish">
+                        <% for(let i=0; i < dishArr.length; i++) { %>
+                            <option value="<%=dishArr[i] %>">
+                                <%= dishArr[i] %>
+                            </option>
+                            <% } %>
+                    </select>
+                    <div class="serve-num">
+                        <span class="text">Please Enter Number of Servings:</span>
+                        <input type="number" name="no_of_serve" id="no-of-serve" required>
+                    </div>
+                </div>
+            </div>
+            <span id="addDish">Add more Dish</span>
+            <a href="/step2" class="prev-btn">Prev</a>
+            <button type="submit" class="next">Next</button>
+        </form>
+    </main>
+    <script>
+        addDish.addEventListener('click', function ()
+        {
+            addDishFunc("<%= dishArr %>");
+        });
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
